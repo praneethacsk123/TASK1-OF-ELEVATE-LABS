@@ -9,3 +9,41 @@ SIMPLY EXPLAING WHAT WE DID:
 6.BEFORE CLEANINF df.shape -(8809, 26)
 7.AFTER CLEANING df.shape -(5699, 12)
 8.CLEAN DATA OBTAINED 
+
+
+
+
+
+Interview Questions Related To Above Task:
+1. What are missing values and how do you handle them?
+
+Missing values are absent data in a dataset, often represented by `NaN`. Handle them by removing rows/columns (`dropna()`) or filling them with a default value or statistic (`fillna()`).
+
+*2. How do you treat duplicate records?**
+
+Duplicate records are repeated rows, which can be handled by removing them using `drop_duplicates()` while keeping the first or last occurrence.
+
+3. Difference between dropna() and fillna() in Pandas?**
+
+`dropna()`** removes rows or columns with missing values, while **`fillna()`** fills missing values with a specific value or statistic.
+
+4. What is outlier treatment and why is it important?
+  
+Outlier treatment identifies extreme data points, which can distort analysis. It's important to remove or adjust them to improve model accuracy.
+
+5. Explain the process of standardizing data.
+
+Standardizing data scales features to have a mean of 0 and standard deviation of 1, ensuring fair comparison between variables with different units.
+
+6. How do you handle inconsistent data formats (e.g., date/time)?
+  
+Inconsistent data formats (e.g., date/time) can be handled by converting to a standard format using `pd.to_datetime()` or similar methods.
+
+7. What are common data cleaning challenges?
+ 
+Common data cleaning challenges include handling missing data, duplicates, inconsistent formats, and outliers.
+
+8. How can you check data quality?
+  
+Data quality can be checked by inspecting for missing values, duplicates, consistency, and accuracy using descriptive statistics and visualizations.
+
